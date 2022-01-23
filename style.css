@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  margin-bottom: 20px!important;
+}
+header {
+  height: 100px;
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(241, 232, 232);
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    size: 80px;
+    
+  }
+
+  header .header-nav a {
+    padding: 10px 20px;
+    color: rgb(3, 3, 3);
+    text-transform: uppercase;
+    align-items: center;
+  }
+
+  main {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+  }
+
+  .hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-attachment: fixed;
+  }
+  .hero::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+  }
+  .about-us {
+  display: flex;
+  gap: 100px;
+  line-height: 2;
+  align-items: center;
+  height: 600px;
+}
+
+.about-us article:first-child {
+  width: 500px;
+}
+
+.image-conteiner {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.image-conteiner img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-conteiner:hover img {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.contect-us form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px;
+  align-items: center
+}
+
+.contect-us form input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  align-items: center
+}
+
+footer {
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  color: #fff;
+  grid-row: 3 / -1;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .about-us {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .container {
+    width: 100%;
+    align-items: center
+  }
+  .contect-us h2 {
+    color: #fff;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .contect-us form {
+    grid-template-columns: 3fr;
+    align-items: center
+  }
+}
