@@ -5,46 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="/style.css">
 
-    <style>
-        body {
-          background-color: rgb(238, 211, 243);
-        }
-        
-        h1 {
-          color: white;
-          text-align: center;
-        }
-        
-        p {
-          font-family: verdana;
-          font-size: 20px;
-        }
-        </style>
 </head>
 <body>
+    <div class="grid-container">
     <header> 
-        <div id="logo" >
-        <img src="assets/logo.png" alt="logo">
+       <img src="assets/logo.png" alt="" class="headerlogo" width="150px" height="80px">
+      
+       <nav class="header-nav">
+        <a href="/index.html">home</a>
+        <a href="">about</a>
+        <a href="">services</a>
+        <a href="">contact</a>
+       
+      
     </div>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Date</a></li>
-            <li><a href="#">Contact</a></li>
-            
-        </ul>
-    </nav>
-
 </header>
 <main>
-    <section>
+    <section class="about-us">
         <div id="med-sec">
-            <img src="assets/img_avatar2.png" alt="">
+            <article class="image-conteiner">
+            <img src="assets/img_avatar2.png" alt="" width="200px" height="200px">
+        </article>
         </div>
-        <div id="par-part">
+        <div >
             <p>The way your team works is unique — so is Todo.
+                Todo is the flexible work management tool where teams can ideate plans, 
+                collaborate on projects, organize workflows, and track progress in a visual, 
+                productive, and rewarding way. From brainstorm to planning to execution, 
+                Todo manages the big milestones and the day-to-day tasks of working together 
+                and getting things done.
+                The way your team works is unique — so is Todo.
+                Todo is the flexible work management tool where teams can ideate plans, 
+                collaborate on projects, organize workflows, and track progress in a visual, 
+                productive, and rewarding way. From brainstorm to planning to execution, 
+                Todo manages the big milestones and the day-to-day tasks of working together 
+                and getting things done.
+                The way your team works is unique — so is Todo.
+                Todo is the flexible work management tool where teams can ideate plans, 
+                collaborate on projects, organize workflows, and track progress in a visual, 
+                productive, and rewarding way. From brainstorm to planning to execution, 
+                Todo manages the big milestones and the day-to-day tasks of working together 
+                and getting things done.
+                The way your team works is unique — so is Todo.
                 Todo is the flexible work management tool where teams can ideate plans, 
                 collaborate on projects, organize workflows, and track progress in a visual, 
                 productive, and rewarding way. From brainstorm to planning to execution, 
@@ -53,8 +57,7 @@
             </p>
         </div>
     </section>
-    <section>
-        <div id="sub-title">
+    <section class="contect-us">
             <h2>Get in Touch</h2>
         </div>
         <div id="from">
@@ -71,7 +74,10 @@
                 <label for="To">write a message:</label>
                 <input type="text" value="">
                 <br>
-                <input type="submit" value="Submit">
+                <label for="To"></label>
+                <input type="submit" value="Submit" >
+                <br>
+                <br>
             </form>
         </div>
     </section>
@@ -82,11 +88,8 @@
         <div>
             <p class="test">©2022. All Rights Reserved</p>
         </div>
-        <div>
-            <p  id ="last-par" class="test">follow  us</p>
-            <p  id ="last-par" class="test">Contact</p>
-
-        </div>
+        
     </footer>
+</nav>
 </body>
 </html>
